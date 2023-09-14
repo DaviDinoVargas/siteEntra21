@@ -1,0 +1,159 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@600&family=Poppins:wght@300;500;800&family=Sarala:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+.body {
+    font-size: 100%;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+.cabecalho {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 50px;
+    justify-content: space-between;
+}
+
+.sidebar {
+    width: 0;
+    height: -100%;
+    background-color: #868686;
+    overflow-x: hidden;
+    transition: 0.5s;
+    position: fixed;
+    z-index: 1;
+    margin-left: -50px;
+}
+
+.show-sidebar {
+    width: 250px;
+
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    padding: 10px;
+    text-align: center;
+    font-family: 'Sarala', sans-serif;
+    color: #FFFFFF;
+}
+
+.sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    background-color: #ffffff;
+}
+
+#menu-button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 35px;
+    gap: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #404040;
+}
+
+#menu-button:hover {
+    background-color: #797979;
+}
+
+#name {
+    background: none;
+    border: none;
+    height: 72px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 35px;
+    gap: 20px;
+    font-family: 'Sarala', sans-serif;
+    color: #404040;
+}
+
+.conteudo-principal {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.tudo {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.texto1 {
+    font-family: 'chivo', cursive;
+    font-weight: 400;
+    font-size: 4em;
+    color: #404040;
+}
+
+.texto2 {
+    font-family: 'chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1.5em;
+    color: #404040;
+}
+
+.big-img {
+    border: none;
+    max-width: 50vh;
+    width: 50%;
+}
+
+
+@media (max-width: 768px) {
+    .cabecalho {
+        padding: 20px;
+    }
+
+    .sidebar {
+        width: 0px;
+        margin-left: 0;
+    }
+
+    .show-sidebar {
+        width: 200px;
+    }
+    #name{
+        padding: 5px;
+        gap: 2px;
+        height: 10px;
+
+    }
+    .texto1 {
+        margin-left: 5%;
+        font-size: 3em;
+    }
+
+    .texto2 {
+        margin-left: 5%;
+        font-size: 1em;
+    }
+}
