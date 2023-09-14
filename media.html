@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Davi Dino Vargas Potifólio</title>
-    <link rel="stylesheet" type="text/css" href="./css/indexcss.css">
+    <link rel="stylesheet" type="text/css" href="./css/media.css">
 </head>
 
 <body class="full">
@@ -35,19 +35,20 @@
     </body>
     <h1>Insira as notas do aluno</h1>
     
+    
     <label for="nota1">Nota 1:</label>
-    <input type="number" id="nota1" min="0" max="10"><br>
+    <input type="number" id="nota1" min="0" max="10" onkeydown="nextInput(event, 'nota2')" required><br>
     
     <label for="nota2">Nota 2:</label>
-    <input type="number" id="nota2" min="0" max="10"><br>
+    <input type="number" id="nota2" min="0" max="10" onkeydown="nextInput(event, 'nota3')" required><br>
     
     <label for="nota3">Nota 3:</label>
-    <input type="number" id="nota3" min="0" max="10"><br>
+    <input type="number" id="nota3" min="0" max="10" onkeydown="nextInput(event, 'frequencia')" required><br>
     
     <label for="frequencia">Frequência (%):</label>
-    <input type="number" id="frequencia" min="0" max="100"><br>
+    <input type="number" id="frequencia" min="0" max="100" onkeydown="calcularComEnter(event)" required><br>
     
     <button onclick="calcularMedia()">Calcular</button>
-    
+    <script src="./js/media.js"></script>
     </html>
     </body>

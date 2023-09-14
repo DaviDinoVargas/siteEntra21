@@ -33,6 +33,18 @@
 </main>
 <script src="./js/script.js"></script>
 </body>
+<h1>IMC Calculator</h1>
+<form>
+    <label for="peso">Digite o seu peso (kg):</label>
+    <input type="number" id="peso" required step="0.01" onkeydown="checkEnter(event, 'altura')"><br><br>
 
+    <label for="altura">Digite a sua altura (m):</label>
+    <input type="number" id="altura" required step="0.01" onkeydown="checkEnter(event, 'altura', 'calculate')"><br><br>
+
+    <button type="button" id="calculateButton" onclick="calculateIMC()">Calcular IMC</button>
+</form>
+
+<div id="result"></div>
+<script src="./js/imc.js"></script>
 </html>
 </body>
