@@ -1,7 +1,12 @@
 function verificarIdade() {
-  
-    var idade = parseInt(document.getElementById("idade").value);
-    
+    var idadeInput = document.getElementById("idade");
+    var idade = parseInt(idadeInput.value);
+
+    if (isNaN(idade) || idade < 1) {
+        alert("Por favor, preencha a idade corretamente.");
+        idadeInput.focus(); 
+        return; 
+    }
 
     if (idade >= 18) {
         alert("Você é maior de idade.");
@@ -9,7 +14,7 @@ function verificarIdade() {
         alert("Você é menor de idade.");
     }
 
-    document.getElementById("idade").value = "";
+    idadeInput.value = "";
 }
 
 function verificarComEnter(event) {
