@@ -4,14 +4,19 @@ function verificarIdade() {
 
     if (isNaN(idade) || idade < 1) {
         alert("Por favor, preencha a idade corretamente.");
-        idadeInput.focus(); 
-        return; 
+        idadeInput.focus();
+        return;
     }
 
     if (idade >= 18) {
-        alert("Você é maior de idade.");
+        
+        document.querySelector(".resultado").style.display = "block";
+        document.querySelector(".resultado .ok").textContent = "Maior de Idade";
     } else {
+        
         alert("Você é menor de idade.");
+       
+        document.querySelector(".resultado").style.display = "none";
     }
 
     idadeInput.value = "";

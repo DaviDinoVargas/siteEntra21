@@ -37,16 +37,24 @@
         <div class="tudo">
             <div class="escrito">
             <h1 class="texto">Verifique a sua maioridade</h1>
-            <div class="input">
-                <label class="inf" for="idade">Informe sua idade:</label>
-                <input class="input" type="number" id="idade" onkeydown="verificarComEnter(event)">
-                <button class="button" onclick="verificarIdade()">Verificar</button>
+            <div class="input1">
+                <label class="inf" for="idade">IDADE:</label>
+                <input class="input" type="number" id="idade" placeholder="Digite aqui a sua idade" required=""onkeydown="verificarComEnter(event)"/>
+                
+            </div>
+            <button class="button" onclick="verificarIdade()">Verificar</button>
+            </div>
+            <div class="resultado">
+                <img class="imagemOK" src="./img/icons8-ok.svg" alt="iconOK">
+                <p class="ok">&#10004; Maior de Idade</p>
+
             </div>
         </div>
-            
-        </div>
+        
         <img id="img2" src="./img/Electric car-cuate.svg">
+        
     </div>
+  
     </main>
     <script src="./js/idade.js"></script>
     </body>

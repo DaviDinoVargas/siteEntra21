@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Chivo:wght@600&family=Poppins:wght@300;500;800&family=Sarala:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;800&family=Righteous&family=Sarala:wght@400;700&display=swap');
 
 * {
     margin: 0;
@@ -99,16 +100,137 @@
     align-items: center;
     justify-content: space-around;
     flex-wrap: wrap;
+  
 }
 
-.tudo {
+.escrito{
     display: flex;
-    flex-direction: row;
-    gap: 32px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.texto{
+    display: flex;
+    margin-left: 15px;
+    margin-bottom: 12%;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 3em;
+    
+    
+}
+
+.input1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+
+}
+.inf{
+    align-items: center;
+    font-family: 'Righteous', cursive;
+    text-align: center;
+
+}
+
+
+.input{
+    width: auto;
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 8px;
+    border: none;
+    display: block;
+    border-bottom: 0.3rem solid transparent;
+    transition: all 0.3s;
+    background-color: #e9e9e9;
+    margin: 15px;
+    
+}
+
+.button {
+    background-color: #404040;
+    border: 1px solid #222222;
+    border-radius: 8px;
+    box-sizing: border-box;
+    color: #e0e0e0;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+    outline: none;
+    padding: 13px 23px;
+    position: relative;
+    text-align: center;
+    text-decoration: none;
+    touch-action: manipulation;
+    transition: box-shadow .2s,-ms-transform .1s,-webkit-transform .1s,transform .1s;
+    user-select: none;
+    -webkit-user-select: none;
+    width: 45%; 
+    height: auto; 
+    box-sizing: border-box; 
+    
+    }
+   
+  
+  .button:focus-visible {
+    box-shadow: #222222 0 0 0 2px, rgba(255, 255, 255, 0.8) 0 0 0 4px;
+    transition: box-shadow .2s;
+  }
+  
+  .button:active {
+    background-color: #F7F7F7;
+    border-color: #000000;
+    transform: scale(.96);
+  }
+  
+  .button:disabled {
+    border-color: #DDDDDD;
+    color: #DDDDDD;
+    cursor: not-allowed;
+    opacity: 1;
+  }
+  .resultado {
+    display: none;
+    padding: 5%;
+    color: #e0e0e0;
+    text-align: center;
+    font-size: 16px;
+    font-weight: 600;
+    
+
+  
+}
+.ok {
+    font-family: 'Sarala', sans-serif;
+    color: green; 
+    font-size: 16px; 
+    align-items: center;
+    text-align: center;
+    
+}
+.ok img{
+    height: auto;
 }
 
 
 #img2 {
     border: none;
     max-width: 85vh;
+}
+
+
+
+
+@media screen and (max-width: 768px) {
+    .input1 {
+        width: 100%;
+    }
+    .button{
+        width: 72%;
+    }
 }
