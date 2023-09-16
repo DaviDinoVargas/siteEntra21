@@ -18,7 +18,9 @@ function calcularMedia() {
     var frequencia = parseFloat(document.getElementById("frequencia").value);
     var resultadoElement = document.getElementById("resultado");
 
-    if (!isNaN(nota1) && !isNaN(nota2) && !isNaN(nota3) && !isNaN(frequencia)) {
+    if (isNaN(nota1) || isNaN(nota2) || isNaN(nota3) || isNaN(frequencia)) {
+        alert("Por favor, preencha todos os campos corretamente.");
+    } else {
         var media = (nota1 + nota2 + nota3) / 3;
 
         if (media >= 7 && frequencia >= 75) {
@@ -29,13 +31,13 @@ function calcularMedia() {
             resultadoElement.style.color = "red";
         }
 
-        // Limpar os campos
+       
         document.getElementById("nota1").value = "";
         document.getElementById("nota2").value = "";
         document.getElementById("nota3").value = "";
         document.getElementById("frequencia").value = "";
 
-        // Focar no primeiro campo novamente
+        
         document.getElementById("nota1").focus();
     }
 }
