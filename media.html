@@ -8,14 +8,9 @@
 </head>
 
 <body class="full">
-    <header class= "cabecalho" >
-        
+    <header class="cabecalho">
         <div class="wrapper">
-        
             <button id="menu-button"><img src="./img/icons8-menu 1.svg">MENU</button>
-            
-            
-            
             <nav class="sidebar">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -23,39 +18,42 @@
                     <li><a href="./media.html">Média</a></li>
                     <li><a href="./imc.html">IMC</a></li>
                     <li><a href="./pagamentos.html">Pagamentos</a></li>
-            </ul>
-           
-        </nav>
+                </ul>
+            </nav>
         </div>
         <div id="name">DinoMethods <img src="./img/dinosaur 1.svg" alt="logo"></div> 
     </header>
     <main class="conteudo">
-    
-    <script src="./js/script.js"></script>
-    </body>
-    <div class="conteudo-principal">
-        <div class="tudo">
-<div class="escrito">
-    <h1>Insira as notas do aluno</h1>
-    <label for="nota1">Nota 1:</label>
-    <input type="number" id="nota1" min="0" max="10" onkeydown="nextInput(event, 'nota2')" required><br>
-    
-    <label for="nota2">Nota 2:</label>
-    <input type="number" id="nota2" min="0" max="10" onkeydown="nextInput(event, 'nota3')" required><br>
-    
-    <label for="nota3">Nota 3:</label>
-    <input type="number" id="nota3" min="0" max="10" onkeydown="nextInput(event, 'frequencia')" required><br>
-    
-    <label for="frequencia">Frequência (%):</label>
-    <input type="number" id="frequencia" min="0" max="100" onkeydown="calcularComEnter(event)" required><br>
-    
-    <button onclick="calcularMedia()">Calcular</button>
+        <script src="./js/script.js"></script>
+        <div class="conteudo-principal">
+            <div class="tudo">
+                <div class="escrito">
+                    <h1 class="texto">Insira as notas do aluno</h1>
+                    <div class="input1">
+                    <label for="nota1" class="label-nota">Nota 1:</label>
+                    <input type="number" id="nota1" class="input-nota" placeholder="Digite aqui a nota 1:" onkeydown="nextInput(event, 'nota2')" required><br>
+
+                    <label for="nota2" class="label-nota">Nota 2:</label>
+                    <input type="number" id="nota2"  class="input-nota" placeholder="Digite aqui a nota 3:" onkeydown="nextInput(event, 'nota3')" required><br>
+
+                    <label for="nota3" class="label-nota">Nota 3:</label>
+                    <input type="number" id="nota3" class="input-nota" placeholder="Digite aqui a nota 2:" onkeydown="nextInput(event, 'frequencia')" required><br>
+
+                    <label for="frequencia" class="label-frequencia">Frequência (%):</label>
+                    <input type="number" id="frequencia" class="input-frequencia" placeholder="Digite aqui a frequência:"onkeydown="calcularComEnter(event)" required><br>
+                    </div>
+                    <button class="button" onclick="calcularMedia()">Calcular</button>
+                    <p id="resultado"></p>
+                </div>
+            </div>
+            <img id="img2" src="./img/Calculator-amico (1).svg" class="calculator-img">
         </div>
-    </div>
-    <img id="img2" src="./img/Calculator-amico (1).svg">
-</div>
-    
     </main>
+    
     <script src="./js/media.js"></script>
-    </html>
-    </body>
+    <footer class="rodape">
+    </footer>
+    <p class="frase">© 2023 DINO. Todos os direitos reservados.</p>
+  </body>
+  
+  </html>

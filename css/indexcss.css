@@ -8,9 +8,7 @@
 }
 
 .body {
-    font-size: 100%;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+   min-height: 100vh; 
 }
 
 .cabecalho {
@@ -121,10 +119,9 @@
     color: #404040;
 }
 
-.big-img {
+#big-img {
     border: none;
-    max-width: 50vh;
-    width: 50%;
+    max-width: 85vh;
 }
 
 
@@ -157,3 +154,25 @@
         font-size: 1em;
     }
 }
+
+.rodape {
+    margin-top: 10.8%;
+    border-top: 0.4px solid #000000;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.frase{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #404040;
+    
+}
+

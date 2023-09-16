@@ -38,7 +38,7 @@ function calculateIMC() {
         message = "Obesidade III (mórbida)";
     }
 
-    const resultElement = document.getElementById("result");
+    const resultElement = document.getElementById("resultado");
     resultElement.innerHTML = "Seu IMC é: " + imc.toFixed(2) + "<br>" + message;
 
     document.getElementById("peso").value = "";

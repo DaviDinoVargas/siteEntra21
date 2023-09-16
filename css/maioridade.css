@@ -9,9 +9,7 @@
 }
 
 .body {
-    font-size: 100%;
-    background-size: 100% 100%;
-    background-attachment: fixed;
+  min-height: 100vh; 
 }
 
 .cabecalho {
@@ -233,4 +231,25 @@
     .button{
         width: 72%;
     }
+}
+
+.rodape {
+    margin-top: 8.5%;
+    border-top: 0.4px solid #000000;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.frase{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    font-family: 'chivo', sans-serif;
+    font-weight: 400;
+    font-size: 1em;
+    color: #404040;
+    
 }
